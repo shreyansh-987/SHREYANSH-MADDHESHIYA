@@ -4,57 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            border:4px solid black;
+            
+        }
+    .site {
+      background-color: rgb(146, 145, 145);
+      color: white;
+      margin:5px;
+      padding: 10px;
+      text-align: center;
+    }
+
+
+    .Home {
+      display: inline-block;
+      background-color: skyblue;
+      color: rgb(70, 70, 190);
+      margin:5px;
+      padding: 10px; 
+    }
+    .chill {
+      display: inline-block;
+      background-color: rgb(52, 201, 141);
+      color: rgb(143, 245, 219);
+      margin:5px;
+      padding: 10px; 
+    }
+    
+  </style>
 </head>
-<style>
-    .but{
-        background:blue;
-        color:white;
-        margin:5px;
-        padding:10px;
-    }
-    .b{
-        background:green;
-        color: white;
-        margin:5px;
-        padding:10px;
-        border:none;
-        border-radius:4px;
-
-    }
-    .h{
-        background:gray;
-        color:black;
-        margin:5px;
-        padding:5px;
-        border:none;
-        border-radius:4px;
-
-    }
-    body{
-        border:4px solid black;
-    }
-    .website{
-        color:red;
-    }
-</style>
 <body>
-    <header>
-        <center>
-        <h2  class="h">My <span style="color: red;">Website</span>nevigation</h2>
-        </center>
-        </header>
-<nav>
-        <Span class="but">home</Span >
-        <Span  class="but">About</Span >
-        <Span  class="but">Service</Span >
-        <Span  class="but">Contact</Span >
-        </nav>
-        <br>
-    </nav>
-            <Span  class="b">Dashboard</Span >
-            <Span  class="b">Profile</Span >
-            <Span  class="b">Messsages</Span >
-            <Span  class="b">Logout</Span >
-    </nav>
+  <header class="site">
+    <p>My <span style="color: red;">Website</span> Navigation</p>
+  </header>
+
+  <nav>
+    <span class="Home">Home</span>
+    <span class="Home">About</span>
+    <span class="Home">Service</span>
+    <span class="Home">Contact</span>
+  </nav>
+    <nav>
+    <span class="chill">Dashboard</span>
+    <span class="chill">profile</span>
+    <span class="chill">message</span>
+    <span class="chill">logout</span>
+  </nav>
 </body>
 </html>
