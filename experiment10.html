@@ -4,17 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;  
+            align-items: center;             
+            margin: 40px;
+        }
+
+        .heading {
+            border: 3px solid rgb(24, 165, 247);
+            height: 400px;
+            width: 130px;
+            border-radius: 8px;
+            padding: 10px;
+            margin-left: 100px;
+        }
+
+        .heading2 {
+            border: 3px solid rgb(247, 124, 24);
+            height: 110px;
+            width: 450px;
+            border-radius: 8px;
+            padding: 10px;
+            display: flex;
+            margin-right: 400px;
+        }
+
+        .box {
+            height: 25px;
+            width: 50px;
+            border: 2px solid rgb(45, 168, 250);
+            padding: 28px;
+            margin: 10px;
+            background-color: rgb(144, 232, 248);
+            border-radius: 5px;
+        }
+
+        .boxs {
+            height: 25px;
+            width: 50px;
+            border: 2px solid rgb(168, 117, 22);
+            background-color: rgb(245, 203, 126);
+            padding: 28px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .major {
+            color: blue;
+            text-align: center;
+        }
+        .block{
+            margin-left:150px;;
+        }
+        .inline{
+            margin-left: 30px;
+            margin-top: 130px;
+        }
+    </style>
 </head>
-<style>
-    .box{
-        height:10px
-    }
-</style>
+
 <body>
-    <h1 class="major" align="center">Major Versions of HTML</h1>
-    <div class="box">box1</div>
-    <div class="box">box2</div>
-    <div class="box">box3</div>
-    <div class="box">box4</div>
+    <h1 class="major">Major Versions of HTML</h1>
+    <div class="container">
+        
+        <div class="heading">
+            <div class="box">box1</div>
+            <div class="box">box2</div>
+            <div class="box">box3</div>
+            <div class="box">box4</div>
+        </div>
+        <div class="heading2">
+            <div class="boxs">box1</div>
+            <div class="boxs">box2</div>
+            <div class="boxs">box3</div>
+            <div class="boxs">box4</div>    
+        <div class="inline">inline element</div>
+        </div>
+    </div>
+   <div class="block"> Block level element</div> 
+    
+    
+
 </body>
 </html>
