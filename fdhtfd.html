@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Webpage Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  border: 2px solid blue;
+}
+
+header {
+  grid-area: header;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 1em;
+  border-bottom: 2px solid blue;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #e0e0ff;
+  padding: 1em;
+  border-right: 2px solid blue;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  margin: 0.5em 0;
+  text-decoration: none;
+  color: black;
+}
+
+nav a.active {
+  color: green;
+  font-weight: bold;
+}
+
+main {
+  grid-area: main;
+  padding: 1em;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 1em;
+  border-top: 2px solid blue;
+}
+</style>
+<body>
+  <header>
+    <h1>My Header</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#" class="active">Link 3</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Lorem Ipsum</h2>
+    <p>
+      Lorem ipsum odor amet, consectetuer adipiscing elit. Ridiculus sit nisl laoreet facilisis aliquet.
+      Potenti dignissim litora eget montes rhoncus sapien neque urna. Cursus libero sapien integer magnis
+      ligula lobortis quam ut.
+    </p>
+  </main>
+  <footer>
+    <p>Footer</p>
+  </footer>
+</body>
+</html>
