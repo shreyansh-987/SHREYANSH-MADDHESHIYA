@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AutoLux Showroom</title>
-    <!-- <link rel="stylesheet" href="style1.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <style>
     * {
@@ -35,123 +35,78 @@ header nav a {
 header nav a:hover {
     color: orange;
 }
-.hero {
-    height: 90vh;
-    background: url("https://images.unsplash.com/photo-1542362567-b07e54358753") center/cover no-repeat;
-    color: white;
-    text-align: center;
-    padding-top: 200px;
-}
-
-.hero h2 {
-    font-size: 50px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-.hero button {
-    padding: 12px 30px;
-    border: none;
-    background: orange;
-    color: black;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.hero button:hover {
-    background: white;
-}
-.cars {
-    padding: 50px;
-    text-align: center;
-}
-
-.cars h2 {
-    margin-bottom: 30px;
-}
-
-.car-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.car-card {
-    background: white;
-    width: 300px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    transition: transform 0.3s;
-}
-
-.car-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.car-card:hover {
-    transform: scale(1.05);
-}
-
-.car-card h3 {
-    margin: 15px 0 5px;
-}
 footer {
     background: #000;
     color: white;
     text-align: center;
     padding: 15px;
 }
+.hero {
+    height: 85vh;
+    background: url("https://png.pngtree.com/thumb_back/fh260/background/20241013/pngtree-luxury-sport-car-wallpape-futuristic-sports-stand-next-to-background-image_16374285.jpg") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+.form{
+    color:#0df2fa;
+}
+.button{
+     padding: 12px 30px;
+    border: none;
+    background: rgb(203, 216, 22);
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
 
 
 </style>
 <body>
-    <header>
+       <header>
         <h1 class="logo">Autowheel</h1>
         <nav>
             <a href="#">Home</a>
             <a href="#">Cars</a>
             <a href="#">Offers</a>
             <a href="#">Contact</a>
+            
         </nav>
-    </header>
-    <section class="hero">
-        <h2>Drive Your Dream Car</h2>
+        <form action="#" method="get">
+            <input type="search" name="q" placeholder="Search here..." />
+            <button type="submit">Search</button>
+            </form>
+    </header> 
+    <div class="container">
+        <section class="hero">
+        <h1>Drive Your Dream Car</h1>
         <p>Luxury • Performance • Style</p>
-       <a href="Explore cars.html"><button>Explore Cars</button></a> 
+        <br>
+        
+        <form class="form">
+    <lable for="Full Name">Full Name:</lable>
+    <input type="text" id="Full Nmae">
+    <br><br>
+    <lable for="Email">Email:</lable>
+    <input type="text" id="Email">
+    <br><br>
+    <lable for="Password">Password:</lable>
+    <input type="text" id="Password">
+    <br>
+    <br>
+   <button class="button"> <a href="sign in.html">sign in</button></a>
+    </form>
     </section>
-    <section class="cars">
-        <h2>Featured Cars</h2>
-
-        <div class="car-container">
-
-            <div class="car-card">
-                <img src="https://i.ytimg.com/vi/0LRSz4cg4z0/sddefault.jpg" height="200px" alt="Car">
-                <h3>Sports Car</h3>
-                <p>Starting at ₹25 Lakh</p>
-            </div>
-
-            <div class="car-card">
-                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"  height="200px" alt="Car">
-                <h3>SUV</h3>
-                <p>Starting at ₹18 Lakh</p>
-            </div>
-
-            <div class="car-card">
-                <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c" height="200px" alt="Car">
-                <h3>Luxury Sedan</h3>
-                <p>Starting at ₹30 Lakh</p>
-            </div>
-
-        </div>
-    </section>
+    </div>
     <footer>
-        <p>© 2025 AutoLux Showroom | Designed by shreyansh</p>
+        <p>© 2025 Autowheel Showroom | Designed by shreyansh(2025B15410156)</p>
     </footer>
 </body>
 </html>
